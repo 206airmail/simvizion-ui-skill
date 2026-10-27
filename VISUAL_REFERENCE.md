@@ -35,3 +35,13 @@ The canonical written specifications, not screenshot pixel measurements, determi
 ## v1.3 visual-confidence review
 
 The approved aesthetic is **crisp and confident**, not uniformly muted. Evaluate strong readable primary content, meaningful bright-lime featured headline values, readable descriptions, equal prominence for equally important peer categories, and balanced window utilization. A unified intermediate card surface can give a content-heavy interface more presence without adding nested borders or selected-state coloration. The supplied screenshots are identity references, not mandatory layout templates.
+
+## Inspect the images, then transfer the relationships
+
+Open each applicable image before using it for visual comparison. If access is unavailable, state that limitation. These annotations describe visible relationships rather than exact CSS or required layouts.
+
+- **Reference 1 — Anomaly mod catalog:** the compact identity header leaves room for browsing. Repeated image frames, card boundaries and aligned text establish a coherent catalog. Artwork carries much of its character. Transfer framing and hierarchy; do not reproduce the mod catalog or its exact grid. Secondary to the IC identity references.
+- **Reference 2 — SimVizion IC editor:** emblem backlighting, teal header shading and fine linework establish identity above quiet working panels. Lime actions are conspicuous; cyan defines context. The central perspective grid is a functional 3D workspace, not a background motif for other products. Transfer depth, boundaries, action hierarchy and branding; choose the workspace for the new task.
+- **Reference 3 — SimVizion IC preferences:** a crisp foreground dialog separates from a dimmed, blurred application. Navigation, grouped settings and a clear primary completion action make the dialog readable. Transfer layering and control relationships; blur is optional and must have a usable fallback.
+
+References establish visual intent, not automatic approval of every depicted state, text size or accent. Canonical accessibility and interaction rules still apply. Role-specific atmospheric treatments are defined in `references/identity-composition.md`. For a dashboard composition without a viewport, see `examples/composition-review.md`.

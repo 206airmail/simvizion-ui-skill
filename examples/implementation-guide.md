@@ -1,4 +1,4 @@
-> **v1.3:** Treat this as an implementation aid. Canonical references determine exact styling. Default panel header is integrated; selected table rows use a teal background rather than a full outline; invalid inputs use neutral borders with error indicators; lime means primary/on, subdued green means successful outcome.
+> **v1.4:** Treat this as an implementation aid. Canonical references determine exact styling. Default panel header is integrated; selected table rows use a teal background rather than a full outline; invalid inputs use neutral borders with error indicators; lime means primary/on or a deliberately featured headline metric; subdued green conveys meaningful favorable data or success according to its semantic token.
 
 # Practical implementation guide (Rust/Tauri, Electron)
 
@@ -8,7 +8,7 @@
 4. Use `box-sizing:border-box` and reserve borders, icon slots and close-button space to prevent reflow on hover/selection.
 5. Match only **actual app needs**: avoid creating notifications, logs, project selectors, filters, sorting, databases or backends merely because the skill includes their styling.
 6. Test at normal, compact and very narrow windows; verify native desktop title bar/insets, control focus, keyboard navigation, scrolling regions, reduced motion and DPI scaling.
-7. Reference screenshots are the source of aesthetic intent when supplied. Compare excess cyan, border strength, paddings, font scale, title hierarchy, and hover/selected color balance.
+7. Open the actual applicable reference images before design; Markdown links alone are insufficient. Reference screenshots are the source of aesthetic intent when supplied. Compare excess cyan, border strength, paddings, font scale, title hierarchy, and hover/selected color balance.
 8. Document unavoidable deviations (e.g. OS-native file chooser) and keep their surrounding controls in SimVizion style.
 
 ## Example component composition
@@ -38,3 +38,5 @@ For cards, style a deliberately featured favorable value with `var(--sv-value-po
 ## v1.3 content and visual-impact checks
 
 Use `--sv-text-readable-secondary` for descriptive text that should be comfortably read. Use `.sv-content-card` selectively for content-rich cards without inserting decorative nested sections. The `.sv-kpi--headline-featured` class is reserved for genuine headline KPI roles; equal peer cards may each use it for their equivalent featured metric. Dense tables continue to use subdued data-green only for designated favorable roles. At the end of implementation, inspect normal and constrained layouts, confirm fonts actually load, check browser zoom/OS scaling, and assess the whole screen for proper hierarchy rather than merely token compliance.
+
+See `composition-review.md` for a worked dashboard critique and `../references/identity-composition.md` for canonical branding/effect rules. Functional checks and visual review need separate evidence.

@@ -1,4 +1,4 @@
-# Typography, spacing, geometry — canonical foundation (v1.3)
+# Typography, spacing, geometry — canonical foundation (v1.4)
 
 ## Typography
 

@@ -4,7 +4,7 @@
 
 Design every application for its purpose. Make every application unmistakably SimVizion.
 
-## What's new in v1.3
+## Earlier v1.3 improvements
 
 v1.3 strengthens **visual confidence without decorative excess**: purposeful headline-lime metrics, readable-secondary text, responsive dashboard typography, an intermediate unified content-card surface, contextual density, and required whole-screen visual review. Equal peer categories stay equally prominent. All improvements preserve the original compact technical-editor defaults.
 
@@ -36,7 +36,7 @@ Once a version tag exists, clone and check out that tag:
 
 ```bash
 git clone https://github.com/206airmail/simvizion-ui-skill.git .agents/skills/simvizion-ui
-git -C .agents/skills/simvizion-ui checkout v1.3.0
+git -C .agents/skills/simvizion-ui checkout v1.4.0
 ```
 
 To update from a pinned version, deliberately check out a newer published tag. An ordinary `git pull` will not advance a detached tag checkout.
@@ -62,3 +62,7 @@ To update from a pinned version, deliberately check out a newer published tag. A
 5. Update consuming projects with `git pull --ff-only`, or switch to the new tag for pinned installs.
 
 This repository is intended to store the **skill source**, not a shared runtime UI framework. It does not require applications to use identical layouts or technologies.
+
+## v1.4: recognizable family, purpose-built applications
+
+The skill now distinguishes shared identity from application structure, requires actual reference-image inspection for visual comparison, permits controlled branding and atmospheric effects, and makes composition review concrete. See `references/identity-composition.md`, the annotations in `VISUAL_REFERENCE.md`, and the written comparison in `examples/composition-review.md`. The comparison is a design proposal, not a rendered demonstration.

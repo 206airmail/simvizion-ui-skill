@@ -1,8 +1,8 @@
-# SimVizion quick reference (v1.3)
+# SimVizion quick reference (v1.4)
 
 > Summary only. `SKILL.md` and the canonical `references/*.md` are authoritative; resolve discrepancies against them. Family resemblance, not uniformity.
 
-# SimVizion UI — Quick Reference (v1.3)
+# SimVizion UI — Quick Reference (v1.4)
 
 ## Essential colors
 | Token | Hex | Purpose |
@@ -87,3 +87,7 @@ This skill does **not** mandate storage (JSON/SQLite), recovery journals, notifi
 - **Surface:** `--sv-surface-content-raised` is an optional unified content-card treatment, not a mandatory nested background strip.
 - **Density:** Dense regions 8–12px panel padding, standard 12px, content cards ~16px when beneficial.
 - **Quality:** Review full-screen hierarchy, readable secondary content, purposeful emphasis, available-space utilization, font rendering and scale.
+
+## v1.4 family identity and composition
+
+Use `references/identity-composition.md` as the canonical guide. Open the actual reference images. Preserve family color roles, clear typography, control styling and coherent depth while choosing navigation, layout and density for the application. Branding gradients, artwork lighting and selective primary-action illumination are optional role-specific treatments, never replacements for focus or selection. Give content appropriate scale; keep tables compact. Review and correct whole-screen weaknesses separately from functional verification. See `examples/composition-review.md` for a written dashboard comparison, not a rendered template.

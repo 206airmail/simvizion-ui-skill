@@ -1,4 +1,4 @@
-# Charts and technical data visualization — controlled extensions (v1.3)
+# Charts and technical data visualization — controlled extensions (v1.4)
 
 Charts are not required in every SimVizion application. When used, their **containers, typography, grid, legends, controls, and interaction states MUST use canonical SimVizion tokens**. The number and kind of data series should determine the chart type and encoding, not the desire to introduce additional accent colors.
 

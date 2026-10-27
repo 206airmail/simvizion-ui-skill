@@ -1,4 +1,4 @@
-# Extended reusable UI components (v1.3)
+# Extended reusable UI components (v1.4)
 
 These are **specialized recommendations**, harmonized with the already-approved SimVizion tokens. They are visual rules, not application feature mandates.
 
@@ -36,12 +36,12 @@ These are **specialized recommendations**, harmonized with the already-approved 
 
 - Lime `--sv-lime` is the primary action/on-state token. **Do not flood financial tables with bright lime values.**
 - **Ordinary positive financial values in dense tables remain near-white** `--sv-text`; a positive sign alone does not justify green. Use **`--sv-value-negative: #E8A0A0`** for genuine losses and **`--sv-value-positive: #A7D5A0`** for featured favorable KPIs, clearly meaningful favorable statistics in sparse cards, or rare threshold-defined exceptions in dense tables (not every winning row).
-- Use tabular numerals, right alignment, signs/units and/or labels. Do not rely solely on color to convey gain/loss. Do not color a column green merely because it is currently ranked or sorted. A single deliberately designated primary favorable metric column MAY use subdued data green in accordance with `colors.md` and `tables.md`; other numerical columns remain neutral. KPI cards may use one focal favorable result.
+- Use tabular numerals, right alignment, signs/units and/or labels. Do not rely solely on color to convey gain/loss. Do not color a column green merely because it is currently ranked or sorted. A single deliberately designated primary favorable metric column MAY use subdued data green in accordance with `colors.md` and `tables.md`; other numerical columns remain neutral. Each peer KPI card may feature its equivalent primary value; see the headline rules below.
 
 ## Display metrics / headline numbers
 
-- Existing 20px/600 page heading remains unchanged. For a major KPI/metric, introduce **28px/600** as the standard display metric and **32px/600** as the rare prominent display variant; 24px/600 compact when constrained.
-- Line-height ~1.1–1.2, tabular numerals, near-white `--sv-text` by default; a single featured favorable KPI may use subdued data green `--sv-value-positive` as a visual focal point. Unit/currency symbols may be secondary or smaller, labels 11–13px muted/secondary. Use semantic positive/negative color only when vital; don't make all headline metrics lime.
+- Use the contextual typography scale in `typography-spacing.md`: 20px/600 technical page titles or 24px/600 dashboard titles; 28px/600 standard metrics, 24px compact, and 28–36px featured content/dashboard metrics where appropriate.
+- Line-height ~1.1–1.2 and tabular numerals. Near-white is the default; meaningful favorable results may use subdued data green. A semantically featured headline may use lime, including one equivalent headline per equally important peer card. Numerical magnitude alone does not establish importance. Supporting descriptions use readable-secondary; metadata may be smaller. Follow `colors.md` for semantic limits.
 
 ## Expandable data-grid rows
 
@@ -57,4 +57,4 @@ These are **specialized recommendations**, harmonized with the already-approved 
 
 ## Dense financial tables: approved featured-column option B
 
-Use `--sv-value-positive` on **one intentionally prioritized favorable measure column** where it improves scanability (for example Profit/hr), not on every positive numeric cell and not simply because it is sorted. Keep other routine positive metrics near-white. Add small, exceptional context-defined green highlights sparingly. Do not turn entire columns green for common win rates, and keep lime for interactive semantics. This rule refines earlier strict neutral-only dense-table wording; see `references/tables.md`.
+Use `--sv-value-positive` on **one intentionally prioritized favorable measure column** where it improves scanability (for example Profit/hr), not on every positive numeric cell and not simply because it is sorted. Keep other routine positive metrics near-white. Add small, exceptional context-defined green highlights sparingly. Do not turn entire columns green for common win rates, and keep bright lime out of dense numeric table columns. This rule refines earlier strict neutral-only dense-table wording; see `references/tables.md`.

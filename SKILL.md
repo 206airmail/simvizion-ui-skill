@@ -1,6 +1,6 @@
 ---
 name: simvizion-ui
-version: 1.3.0
+version: 1.4.0
 description: Apply the desktop-first SimVizion visual design language to new applications, existing applications, and web adaptations. Preserve a recognizable SimVizion family identity while choosing application-specific layouts, navigation, and workflows. Use for UI design, modernization, implementation, and visual review in Rust, Tauri, Electron, native desktop frameworks, and browser interfaces.
 ---
 
@@ -30,24 +30,24 @@ Favor clarity, efficient technical work, readable information, and purposeful vi
 - **Density:** 32px standard and 28px compact controls. Use 8–12px padding in dense technical regions, 12px in standard panels, and 16px in content/dashboard cards as appropriate; spacing communicates information relationships.
 - **Geometry:** Crisp 1px boundaries where functional; restrained 4px control, 6px panel, and 8px dialog radii. Defined button boundaries; recessed fields; low-key shadows on floating elements.
 - **Interaction:** Distinct hover, selected, focused, checked, invalid, loading, and disabled states. Keyboard focus remains independently identifiable.
-- **Icons and motion:** Coherent Lucide-like outline icons and subtle functional transitions; no ornamental glows, oversized shadows, or unnecessary animation.
+- **Icons and motion:** Coherent Lucide-like outline icons and subtle functional transitions; restrained role-specific lighting where appropriate; avoid repetitive glow, oversized shadows, or unnecessary animation. See `references/identity-composition.md`.
 - **Composition:** Layout, navigation, and workspace arrangement are chosen for the application's actual tasks, not copied from existing SimVizion screenshots.
 
 This summary conveys the identity; **canonical references own the exact values, component variants, and detailed behaviors**. Do not use this summary as a second independent token source.
 
 ## 3. Rule authority
 
-- **MUST / Required:** Preserve functionality, data integrity, applicable accessibility requirements, core identity tokens, and established interaction semantics. Explicitly approved component decisions are binding where applicable.
+- **MUST / Required:** Preserve functionality, data integrity, applicable accessibility requirements, core identity tokens, and established interaction semantics. Explicitly approved component decisions are binding where applicable. Accessibility and platform conventions take precedence when they conflict with a visual default.
 - **SHOULD / Default:** Follow documented component appearances and usage patterns. Use an approved contextual variant when its documented conditions apply.
 - **MAY / Contextual:** Choose application-appropriate layout, navigation, panel organization, information density, and necessary specialized visualization components.
 
-**Contextual flexibility does not authorize arbitrary visual substitutions.** In particular, do not replace approved bordered buttons with borderless buttons, or the approved strongly bordered active navigation with a minimalist alternative, simply for stylistic preference.
+**Keep identity stable; choose composition for the task.** Preserve core color roles, readable typography, recognizable control styling and distinct interaction states. Component dimensions and shell arrangements are contextual defaults, not requirements to reproduce the editor. A website may use top navigation, a utility a small single view, and an editor resizable panes. Document purposeful variants rather than silently redefining global tokens. Where the documented sidebar pattern is used, preserve its defined selected treatment.
 
 Component-specific rules MAY specialize general guidance, but cannot override required functionality or accessibility.
 
 ## 4. References and source of truth
 
-Before any SimVizion UI work, read this `SKILL.md` and the canonical foundations in `references/colors.md` and `references/typography-spacing.md`. Then read **all references relevant to the affected UI**:
+Before any SimVizion UI work, read this `SKILL.md` and the canonical foundations in `references/colors.md` and `references/typography-spacing.md`. Read `references/identity-composition.md` for screen design or redesign. Open the applicable images in `VISUAL_REFERENCE.md`; reading their Markdown links is insufficient. Identify transferable styling, application-specific content, and optional effects. If image access is unavailable, report that limitation and do not claim visual comparison. Then read **all references relevant to the affected UI**:
 
 | Work area | Authoritative reference |
 | --- | --- |
@@ -63,13 +63,14 @@ Before any SimVizion UI work, read this `SKILL.md` and the canonical foundations
 | Web/mobile adaptations when relevant | `references/web-layouts.md` |
 | Specialized UI components and metrics | `references/extended-components.md` |
 | Charts, multi-series data and technical visualizations | `references/data-visualization.md` |
+| Family identity, composition, branding and atmospheric effects | `references/identity-composition.md` |
 | Visual family examples and anti-patterns | `VISUAL_REFERENCE.md` |
 
 `QUICK_REFERENCE.md` is a convenience summary, **not** an independent authority. `examples/tokens.css` and `examples/implementation-guide.md` are implementation aids, **not** independent rule sources. Do not infer that every detail of an existing example is mandated for every application.
 
 **Conflict process:** (1) protect functionality/accessibility; (2) apply these governing principles; (3) consult the canonical reference for the affected area; (4) use documented context-specific variants; (5) flag genuine inconsistencies rather than silently inventing a new design rule. Do not assume that an older example overrides an approved newer decision.
 
-**Version alignment:** The references in this package are consolidated for v1.3. Report remaining ambiguities; do not treat example CSS as a competing authority.
+**Version alignment:** The references in this package are aligned for v1.4. Report remaining ambiguities; do not treat example CSS as a competing authority.
 
 ## 5. Agent workflow
 
@@ -105,7 +106,8 @@ Reference code SHOULD demonstrate required component states and SHOULD be mainta
 - **Surface composition:** Use intermediate surface color for unified content-rich cards where useful; introduce internal tonal segmentation only to clarify meaningful groups. Do not style content cards as selected navigation.
 - **Space:** Use available width proportionately; avoid arbitrary narrow wrappers or oversized cards. Empty space is acceptable when it serves clarity.
 - **Rendered text:** Verify actual font loading, zoom, operating-system scaling and any text-affecting transforms before attributing apparent fuzziness to palette alone. Do not rely on font-smoothing hacks.
-- **Quality gate:** Inspect normal and constrained layouts, then assess whether hierarchy, emphasis, and visual balance support the task. Report when rendered visual verification was unavailable.
+- **Quality gate:** Inspect normal and constrained layouts. Identify what draws attention first, whether useful content is delayed by introductions/metadata, whether repeated components align, and whether empty space and borders serve a purpose. Correct material weaknesses within the authorized scope and repeat the affected visual check. Capture observations and unresolved issues; a screenshot alone does not pass this gate. Report when rendered visual verification was unavailable.
+- **Separate evidence:** Report functional/layout checks separately from visual critique. Passing tests and matching tokens do not establish aesthetic quality. Use the comparison in `examples/composition-review.md` to guide judgment, not as a mandatory layout.
 
 ## 8. Validation and completion
 

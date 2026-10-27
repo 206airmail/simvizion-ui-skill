@@ -29,3 +29,7 @@ A SimVizion website is not automatically a fixed desktop shell. Public pages nor
 A content-rich card MAY use the unified `--sv-surface-content-raised` (`#101F23`) surface with a standard structural border and contextual 16px padding. Avoid mandatory elevated header/footer strips; split its surface internally only when the sections represent meaningful distinct information groups. Equal peer cards use equivalent hierarchy and styling. Do not confuse a raised content card with the `--sv-selected-bg` selected-navigation surface.
 
 Major screens SHOULD use available area proportionately: dense editors prioritize the workspace, dashboards may use responsive card grids, and simple utilities may remain appropriately narrow. Do not arbitrarily promote one peer based on numerical magnitude. Inspect the entire composition at supported window sizes, not only individual token compliance.
+
+## Identity and shell scope
+
+The dimensions above are starting points for the described desktop patterns. A compact 40px toolbar with a small icon is appropriate for a working toolbar; it is not the universal SimVizion masthead. A product header may use a larger emblem and title, restrained atmospheric shading and useful context. Choose one coherent identity/navigation arrangement rather than stacking redundant bars. Keep primary work accessible below it. See `identity-composition.md` for canonical composition and branding rules.

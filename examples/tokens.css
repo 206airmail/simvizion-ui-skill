@@ -1,4 +1,4 @@
-/* SimVizion Unified UI v1.3 — reference tokens. Map into existing framework themes as needed. */
+/* SimVizion Unified UI v1.4 — reference tokens. Map into existing framework themes as needed. */
 :root {
   --sv-window:#050C0E; --sv-panel:#0D1B1F;
   --sv-surface-content-raised:#101F23; --sv-elevated:#14272B; --sv-recessed:#071215;
@@ -105,3 +105,14 @@
 .sv-kpi--headline-featured {color:var(--sv-lime);font-variant-numeric:tabular-nums;font-weight:600;}
 .sv-dashboard-copy {font-size:14px;line-height:1.3;}
 @media (prefers-reduced-motion:reduce){.sv-content-card {transition:none;}}
+
+/* Optional atmospheric examples; scope to chosen roles, never global state styles. */
+:root {
+  --sv-brand-wash: radial-gradient(ellipse at 20% 30%, rgba(0, 160, 165, .10), transparent 65%);
+  --sv-brand-halo: 0 0 20px rgba(0, 185, 190, .14);
+  --sv-primary-halo: 0 0 14px rgba(154, 240, 0, .16);
+}
+.sv-brand-region { background-color:var(--sv-window); background-image:var(--sv-brand-wash); }
+.sv-brand-artwork { box-shadow:var(--sv-brand-halo); }
+.sv-button--primary.sv-button--illuminated:not(:disabled):not(:focus-visible) { box-shadow:var(--sv-primary-halo); }
+/* Preserve existing focus rules; illumination is static, optional, and never a focus signal. */

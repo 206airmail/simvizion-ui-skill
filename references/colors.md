@@ -1,4 +1,4 @@
-# SimVizion color system — canonical reference (v1.3)
+# SimVizion color system — canonical reference (v1.4)
 
 > **Authority:** This file owns the color values and semantic color-use rules. `SKILL.md` summarizes the visual identity; `QUICK_REFERENCE.md` and `examples/tokens.css` must implement this file without defining competing standards. Component references own geometry and interaction mechanics. **Family resemblance, not uniformity:** keep the identity stable while designing layouts for their actual purpose.
 
@@ -101,4 +101,4 @@ Destructive action style remains red regardless of whether that action is the ma
 - Check text and essential visual-state contrast against the **actual** surface. Target at least **4.5:1** for normal text and **3:1** for qualifying large text and essential nontext indicators; passive decorative panel borders need not meet a control-boundary target. Focus must be visible and distinguishable; enhance its default 1px teal border when needed. Verify case by case rather than recoloring the entire palette.
 - No semantic status or selected state is conveyed by color alone; use labels, icons, border geometry, text weight, or other redundant cues as appropriate.
 - Keep core tokens fixed. Application-specific specialized data visualizations MAY extend the palette with documented semantic tokens; normal UI may not quietly invent alternative primary, hover, input or selection colors.
-- `examples/tokens.css` and condensed guidance must be synchronized to this reference. The v1.3 implementation examples and quick reference must remain aligned with this canonical specification; flag any future drift as a defect rather than treating it as an approved alternative.
+- `examples/tokens.css` and condensed guidance must be synchronized to this reference. The v1.4 implementation examples and quick reference must remain aligned with this canonical specification; flag any future drift as a defect rather than treating it as an approved alternative.
