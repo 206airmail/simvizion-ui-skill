@@ -1,4 +1,4 @@
-# Typography, spacing, geometry — canonical foundation (v1.2)
+# Typography, spacing, geometry — canonical foundation (v1.3)
 
 ## Typography
 
@@ -14,9 +14,26 @@ Use **Segoe UI Variable**, falling back to **Segoe UI**, then a platform system 
 | Tooltip / supporting description | 12px | 400 | Readable neutral; not unnecessarily faded |
 | Secondary metadata / compact chip | 11px | 400–500 | Muted neutral; never substitute for essential form labels |
 | Technical inline code | 12px | 400 | Monospace on recessed surface |
-| Major KPI (normal / compact / featured) | 28 / 24 / 32px | 600 | Tabular numerals, data semantics from `colors.md` |
+| Major KPI (normal / compact / featured) | 28 / 24 / 32px | 600 | Dense/technical baseline; content/dashboard featured may use 28–36px, tabular numerals |
 
 Titles signal structure using size and weight before color. Compact uppercase panel identifiers are allowed; ordinary headings, descriptions, and labels use natural capitalization. Reserve cyan for active context or intentionally meaningful technical information, not every heading. Preserve at least 13px ordinary control text in compact density. Avoid all-bold interfaces. Don't shrink text to rescue crowded layouts; reorganize the layout instead. Text/background combinations must satisfy applicable accessibility criteria.
+
+## Context-specific typography — same family, different density
+
+The **technical/dense** scale remains canonical for inspectors, toolbars, forms and tables. Content-heavy dashboards/web views MAY use an **adaptive content scale** when its added hierarchy materially improves readability. These are contextual variants, not a requirement to enlarge every application.
+
+| Role | Dense technical | Content/dashboard |
+|---|---:|---:|
+| Main page title | 20px / 600 | 24px / 600 |
+| Section heading | 16px / 600 | 18px / 600 |
+| Card heading | 14px / 600 | 16px / 600 |
+| Body/description | 13px | 14–15px |
+| Form labels | 13px | 13–14px |
+| Metadata | 11–12px | 12–13px |
+| Featured headline KPI | 24–32px | 28–36px |
+| Table data and compact controls | 13px | 13px |
+
+Frequently read explanations use `--sv-text-readable-secondary` (`#C5D4D6`); near-white remains primary and subdued gray-teal is for labels and genuinely tertiary metadata. Prefer a stronger typographic hierarchy over uniformly semibold text. Use the same roles consistently across equivalent peer cards.
 
 ## Spacing scale and relationships
 
@@ -33,6 +50,10 @@ Canonical scale: **2, 4, 6, 8, 12, 16, 20, 24, 32px**. Base rhythm is 4px with 2
 | Tooltip/icon-to-text gap | 6–8px | Contextual, consistent per group |
 
 Group related controls tightly; separate sections through space and near-white subgroup headings first, and use **contextual subtle 1px dividers** when they clarify a genuine boundary. Avoid redundant borders and whitespace. Keep grid alignment and control size consistent within a functional group.
+
+## Contextual content spacing
+
+Use **8–12px** panel padding for dense technical UI, **12px** for standard application regions and **16px** as a content/dashboard-card starting point. Internal group spacing generally uses **4–8px** dense, **6–12px** standard, and **8–16px** content. Keep labels adjacent to associated values and create more space between distinct groups. Do not force every application into a wider/looser layout or treat 16px as a universal card requirement.
 
 ## Control density and geometry
 

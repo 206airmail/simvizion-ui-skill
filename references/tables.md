@@ -30,3 +30,8 @@ Table toolbars: 28px controls in compact toolbar by default (32px standard only 
 - Desktop table headers normally stick while rows scroll. A page-level sticky header can conflict with a table-wide horizontal overflow container. In that case preserve reliable horizontal scroll and alignment even if the header is nonsticky. Breakpoint depends on actual layout, **not a universal 1240px rule**. Avoid nested scrolling traps.
 - **Destructive row actions** such as Delete/Clear count as secondary actions when repeated in a data table: on pointer devices they may show on hover/focus or in a row overflow menu, but they must remain discoverable via keyboard and be persistently reachable on touch. Apply existing destructive confirmation conventions for consequential actions.
 - **Win-rate / reliability semantics:** do not hardcode universal 90%/50% thresholds. Very high reliability may be green only if meaningfully favorable; mediocre values stay neutral, cautionary values may be amber, and red is reserved for genuine failure/unacceptable risk as defined by the application. Include words/labels or other cues beyond color.
+
+
+## v1.3 data emphasis clarification
+
+The bright-lime featured-headline exception is for prominent, standalone KPI display roles (including one equivalent featured value per equally important peer card). It **does not** authorize bright-lime numeric columns in dense tables. Continue using one intentionally designated primary favorable column in subdued `--sv-value-positive` green as documented above; ordinary data remains near-white. Sorting alone does not alter semantic color.

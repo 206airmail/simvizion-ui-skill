@@ -1,4 +1,4 @@
-# Extended reusable UI components (v1.2)
+# Extended reusable UI components (v1.3)
 
 These are **specialized recommendations**, harmonized with the already-approved SimVizion tokens. They are visual rules, not application feature mandates.
 

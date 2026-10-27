@@ -4,6 +4,10 @@
 
 Design every application for its purpose. Make every application unmistakably SimVizion.
 
+## What's new in v1.3
+
+v1.3 strengthens **visual confidence without decorative excess**: purposeful headline-lime metrics, readable-secondary text, responsive dashboard typography, an intermediate unified content-card surface, contextual density, and required whole-screen visual review. Equal peer categories stay equally prominent. All improvements preserve the original compact technical-editor defaults.
+
 ## Install for coding agents
 
 The repository root contains `SKILL.md`, with supporting specifications in `references/`, implementation examples in `examples/`, and visual references in `assets/`.
@@ -32,7 +36,7 @@ Once a version tag exists, clone and check out that tag:
 
 ```bash
 git clone https://github.com/206airmail/simvizion-ui-skill.git .agents/skills/simvizion-ui
-git -C .agents/skills/simvizion-ui checkout v1.2.0
+git -C .agents/skills/simvizion-ui checkout v1.3.0
 ```
 
 To update from a pinned version, deliberately check out a newer published tag. An ordinary `git pull` will not advance a detached tag checkout.

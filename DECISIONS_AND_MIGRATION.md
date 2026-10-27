@@ -1,4 +1,4 @@
-# SimVizion v1.2 — consolidation notes (non-authoritative)
+# SimVizion v1.3 — consolidation notes (non-authoritative)
 
 The governing principle is **Family Resemblance, Not Uniformity**. New applications may freely choose functional layouts; modernization preserves workflows and makes targeted improvements. Desktop-first, web-adaptable.
 
@@ -16,4 +16,15 @@ The governing principle is **Family Resemblance, Not Uniformity**. New applicati
 
 ## Migration check
 
-Where older examples implied red invalid borders, per-row full selected outlines, cyan subsection headings, elevated panel headers by default, or white outer focus rings, v1.2 canonical rules supersede them. Reference CSS demonstrates sample classes, not a complete framework component library. Test every real component and its states in the actual app.
+Where older examples implied red invalid borders, per-row full selected outlines, cyan subsection headings, elevated panel headers by default, or white outer focus rings, v1.3 canonical rules supersede them. Reference CSS demonstrates sample classes, not a complete framework component library. Test every real component and its states in the actual app.
+
+
+## v1.3 approved visual-impact refinements
+
+- Selective **bright lime** on semantically featured headline values, including one equivalent metric per equally important peer card; no blanket lime columns.
+- Readable-secondary prose `#C5D4D6`, while secondary labels and tertiary metadata remain distinct.
+- Adaptive content/dashboard typography while retaining compact 13px table and control typography.
+- Intermediate `#101F23` optional *unified* content-rich card surface; decorative internal segmentation is not mandatory.
+- Contextual density, 16px content-card padding as a starting point, and balanced use of available space.
+- Purpose-driven focal hierarchy: never arbitrarily feature one of several equal peers based on magnitude.
+- Mandatory whole-screen visual polish when a rendered app is available; test font rendering before applying smoothing hacks.

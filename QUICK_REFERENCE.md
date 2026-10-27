@@ -1,18 +1,20 @@
-# SimVizion quick reference (v1.2)
+# SimVizion quick reference (v1.3)
 
 > Summary only. `SKILL.md` and the canonical `references/*.md` are authoritative; resolve discrepancies against them. Family resemblance, not uniformity.
 
-# SimVizion UI — Quick Reference (v1.2)
+# SimVizion UI — Quick Reference (v1.3)
 
 ## Essential colors
 | Token | Hex | Purpose |
 |---|---|---|
 | `--sv-window` | `#050C0E` | Window canvas |
 | `--sv-panel` | `#0D1B1F` | Main panels |
+| `--sv-surface-content-raised` | `#101F23` | Optional unified content-rich cards |
 | `--sv-elevated` | `#14272B` | Elevated regions, popovers, toolbars; headers when warranted |
 | `--sv-recessed` | `#071215` | Inputs, code areas, recessed content |
 | `--sv-border` | `#294147` | 1px borders and dividers |
 | `--sv-text` | `#EDF4F5` | Primary near-white text |
+| `--sv-text-readable-secondary` | `#C5D4D6` | Readable descriptions/supporting content |
 | `--sv-text-secondary` | `#A6B8BC` | Secondary labels/body |
 | `--sv-text-muted` | `#91A6AB` | Metadata/placeholders |
 | `--sv-lime` | `#9AF000` | Primary CTA, checked/on-state |
@@ -65,8 +67,8 @@ This skill does **not** mandate storage (JSON/SQLite), recovery journals, notifi
 - **Persistent banners:** 20px semantic icon, 12px padding, 6px radius, subdued status tint, 13px/600 title.
 - **Segmented toggles:** 28px compact / 32px standard, selected uses **teal** (`--sv-selected-bg`/`--sv-selected-border`), not lime.
 - **Inline links:** restrained `--sv-link: #86CDD0`, hover `#B2E5E6`, underline hover/focus; underline by default in prose if clarity requires.
-- **Financial data (approved):** positive/ordinary numbers stay near-white `--sv-text`, losses use subdued red `--sv-value-negative: #E8A0A0`, featured favorable KPIs and meaningful favorable statistics may use restrained `--sv-value-positive: #A7D5A0` in sparse cards; dense tables may use subdued green on **one intentionally designated primary favorable metric column**, plus sparse meaningful exceptional values. Neither positive sign nor sort state alone triggers green; lime is not for routine numeric data.
-- **Headline KPIs:** 28px/600 typical (24px compact, 32px featured), near-white default or subdued data green for a featured favorable result, tabular digits.
+- **Financial data (approved):** positive/ordinary numbers stay near-white `--sv-text`, losses use subdued red `--sv-value-negative: #E8A0A0`, featured favorable KPIs and meaningful favorable statistics may use restrained `--sv-value-positive: #A7D5A0` in sparse cards; dense tables may use subdued green on **one intentionally designated primary favorable metric column**, plus sparse meaningful exceptional values. Neither positive sign nor sort state alone triggers green; bright lime is permitted for featured headline KPI roles, not routine numeric data.
+- **Headline KPIs:** 28px/600 typical (24px compact, 32px featured), near-white default, subdued positive green for a favorable featured value, or bright lime for a semantically featured headline metric, tabular digits.
 - **Expandable table rows:** expansion is **not selection**. Recessed breakdown below row; keep background-led selection only if selected.
 - **Scrollbar:** 6px **visual** width globally (prior standard); optional larger pointer hit target.
 - **Toolbar controls:** 28px compact default, 32px if appropriate. Right-aligned numeric header sort arrow may precede label inside a right-aligned heading group to preserve numeric alignment.
@@ -74,7 +76,14 @@ This skill does **not** mandate storage (JSON/SQLite), recovery journals, notifi
 - Text semantics: **secondary** for meaningful labels/explanations; **muted** for metadata, timestamps and placeholders; disabled separate.
 - All CSS token names must match `examples/tokens.css`: **use `--sv-lime`**, with `--sv-primary` only as a documented backward-compatible alias.
 
-- **Approved data-accent balance B:** Featured favorable KPI figures and genuinely meaningful favorable statistics in sparse cards may be subdued green, while dense tables may feature one primary favorable metric column in subdued green and a few exceptional statistics; other normal positive figures remain near-white. No blanket green-per-positive-value rule. Win-rate thresholds are app-defined, not global.
+- **Approved data-accent balance B:** Featured favorable KPI figures and genuinely meaningful favorable statistics in sparse cards may be subdued green, while dense tables may feature one primary favorable metric column in subdued green and a few exceptional statistics; other normal positive figures remain near-white. No blanket green-per-positive-value rule. Equal peer cards may each feature a bright-lime headline number if each has the same featured role. Win-rate thresholds are app-defined, not global.
 - **Mobile wide-table cue:** edge fade/partial next-column indication + accessible horizontal-scroll hint; preserve scrolling even if a page-level sticky header must become nonsticky. Repeated destructive row actions are secondary on pointer hover/focus but reachable on touch/keyboard.
 
 - **Approved dense-table hierarchy B:** A single *purposefully featured favorable metric* column (e.g. Profit/hr) may use `--sv-value-positive` with semibold figures; all other routine positive columns stay near-white. Sorting a different column must not automatically move green. Extra green accents must be rare and meaningfully exceptional; never use bright lime for table data.
+
+## v1.3 visual-impact guidance
+- **Purpose-driven hierarchy:** Equal peer categories remain equally prominent; use hierarchy *inside* each card rather than promoting one arbitrarily.
+- **Content type:** Dense controls/tables retain 13px type; dashboards may use 14–15px descriptive text, 16px card headings, and 28–36px featured KPI figures.
+- **Surface:** `--sv-surface-content-raised` is an optional unified content-card treatment, not a mandatory nested background strip.
+- **Density:** Dense regions 8–12px panel padding, standard 12px, content cards ~16px when beneficial.
+- **Quality:** Review full-screen hierarchy, readable secondary content, purposeful emphasis, available-space utilization, font rendering and scale.

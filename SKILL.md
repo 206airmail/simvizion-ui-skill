@@ -1,6 +1,6 @@
 ---
 name: simvizion-ui
-version: 1.2.0
+version: 1.3.0
 description: Apply the desktop-first SimVizion visual design language to new applications, existing applications, and web adaptations. Preserve a recognizable SimVizion family identity while choosing application-specific layouts, navigation, and workflows. Use for UI design, modernization, implementation, and visual review in Rust, Tauri, Electron, native desktop frameworks, and browser interfaces.
 ---
 
@@ -14,7 +14,7 @@ description: Apply the desktop-first SimVizion visual design language to new app
 
 Applications MUST preserve the recognizable SimVizion identity through its canonical color system, typography, spacing language, surface treatments, component appearance, interaction semantics, and accessibility foundations. Applications MUST NOT be forced into identical layouts, navigation structures, panels, or workflows merely to resemble another SimVizion program.
 
-Favor clarity, efficient technical work, readable information, and restrained polish over decoration, generic framework aesthetics, and unnecessary visual activity.
+Favor clarity, efficient technical work, readable information, and purposeful visual confidence over decoration, generic framework aesthetics, and unnecessary visual activity.
 
 ### Platform scope
 
@@ -23,11 +23,11 @@ Favor clarity, efficient technical work, readable information, and restrained po
 
 ## 2. Visual identity at a glance
 
-- **Surfaces:** Deep teal-black window backgrounds, distinct but subtle panel surfaces, and recessed inputs. Prefer surface contrast and spacing over excessive panel borders and nested containers.
+- **Surfaces:** Deep teal-black windows, standard panels, recessed inputs, and approved intermediate content-card surface (`--sv-surface-content-raised`). Prefer unified card surfaces and purpose-driven contrast over gratuitous nested bands or strong decorative outlines.
 - **Accents:** SimVizion Lime for dominant affirmative actions and checked/on controls; cyan-teal for navigation, focus, selection, and selective meaningful informational emphasis. Semantic success, warning, error, and info colors communicate actual meaning, not decoration.
-- **Text:** Predominantly near-white and neutral gray-teal; do not make ordinary body text or every heading cyan. Use restrained, purposeful emphasis for featured favorable statistics.
-- **Typography:** Segoe UI Variable (Segoe UI fallback); 13px base text; compact, modest heading hierarchy; tabular numerals for aligned technical data.
-- **Density:** 32px standard and 28px compact controls, 4px spacing rhythm with 2px refinements, 6px control/panel gaps where appropriate, and 12px standard panel padding. Keep text readable in both densities.
+- **Text:** Crisp near-white primary information, readable-secondary descriptions, muted metadata; do not make every heading cyan. Bright lime MAY emphasize genuinely featured headline metrics, including equivalent metrics across equally important groups.
+- **Typography:** Segoe UI Variable (Segoe UI fallback); 13px in technical controls and dense tables, with approved larger content/dashboard typography for readability and visual hierarchy; tabular numerals for aligned data.
+- **Density:** 32px standard and 28px compact controls. Use 8–12px padding in dense technical regions, 12px in standard panels, and 16px in content/dashboard cards as appropriate; spacing communicates information relationships.
 - **Geometry:** Crisp 1px boundaries where functional; restrained 4px control, 6px panel, and 8px dialog radii. Defined button boundaries; recessed fields; low-key shadows on floating elements.
 - **Interaction:** Distinct hover, selected, focused, checked, invalid, loading, and disabled states. Keyboard focus remains independently identifiable.
 - **Icons and motion:** Coherent Lucide-like outline icons and subtle functional transitions; no ornamental glows, oversized shadows, or unnecessary animation.
@@ -69,7 +69,7 @@ Before any SimVizion UI work, read this `SKILL.md` and the canonical foundations
 
 **Conflict process:** (1) protect functionality/accessibility; (2) apply these governing principles; (3) consult the canonical reference for the affected area; (4) use documented context-specific variants; (5) flag genuine inconsistencies rather than silently inventing a new design rule. Do not assume that an older example overrides an approved newer decision.
 
-**Version alignment:** The references in this package are consolidated for v1.2. Report remaining ambiguities; do not treat example CSS as a competing authority.
+**Version alignment:** The references in this package are consolidated for v1.3. Report remaining ambiguities; do not treat example CSS as a competing authority.
 
 ## 5. Agent workflow
 
@@ -79,7 +79,7 @@ Before any SimVizion UI work, read this `SKILL.md` and the canonical foundations
 4. **Load relevant references and apply tokens.** Use canonical specifications and the project's existing component architecture where practical. Reuse documented variants; avoid arbitrary values or unnecessary new dependencies.
 5. **Implement all relevant states.** Include hover, pressed, focus, selection, checked, disabled, loading, validation, and keyboard behavior as appropriate. Distinguish disabled from read-only. Keep technical values accessible without breaking compact layouts.
 6. **Inspect the rendered UI when available.** Check representative normal, constrained, and expanded window sizes as appropriate, along with focus, error, and selected states. Verify the whole-screen composition, not only individual components.
-7. **Perform a proportional polish pass.** Correct awkward alignment, spacing, hierarchy, excess accent usage, unwanted borders, clipping, and balance issues **within the approved layout and workflow boundaries**. Do not use polish as permission for wholesale redesign.
+7. **Perform a required whole-screen polish pass when rendering is available.** Correct awkward alignment, spacing, hierarchy, excess accent usage, unwanted borders, clipping, and balance issues **within the approved layout and workflow boundaries**. Do not use polish as permission for wholesale redesign.
 8. **Report verification and deviations.** State what was checked, meaningful approved extensions, unresolved issues, and anything that could not be visually verified.
 
 ### Existing-application modernization boundary
@@ -94,7 +94,20 @@ Application-specific extensions MAY be introduced for genuine needs such as spec
 
 Reference code SHOULD demonstrate required component states and SHOULD be maintained alongside the corresponding specification. If an example disagrees with a canonical rule, correct the example; do not silently change the rule.
 
-## 7. Validation and completion
+## 7. Visual impact and whole-screen quality
+
+**Purposeful visual confidence is required; decorative intensity is not.** An interface can use every token correctly and still feel flat, cramped, washed out, or awkwardly dispersed. Agents MUST review the rendered screen when available and correct weak hierarchy, insufficient text contrast, ineffective grouping, and poor use of space.
+
+- **Purpose-driven hierarchy:** Make each screen's purpose clear through layout, typography, contrast, and deliberate emphasis. Do not invent a featured winner among equally important categories. Equal peers SHOULD have equal visual importance; each MAY have a strong internal featured value.
+- **Featured metrics:** Bright lime is permitted for a small number of semantically featured headline metrics or for one equivalent headline value *per peer card*. Do not automatically turn ordinary favorable values lime or use lime for dense table numbers.
+- **Clarity:** Main content and frequently read descriptions MUST be readable, not washed out. Use the readable-secondary tier for substantive supporting text and muted tiers for genuinely tertiary information.
+- **Contextual typography and density:** Dense editors remain compact; content/dashboards MAY use larger headings, card text, and deliberate breathing room without enlarging every control.
+- **Surface composition:** Use intermediate surface color for unified content-rich cards where useful; introduce internal tonal segmentation only to clarify meaningful groups. Do not style content cards as selected navigation.
+- **Space:** Use available width proportionately; avoid arbitrary narrow wrappers or oversized cards. Empty space is acceptable when it serves clarity.
+- **Rendered text:** Verify actual font loading, zoom, operating-system scaling and any text-affecting transforms before attributing apparent fuzziness to palette alone. Do not rely on font-smoothing hacks.
+- **Quality gate:** Inspect normal and constrained layouts, then assess whether hierarchy, emphasis, and visual balance support the task. Report when rendered visual verification was unavailable.
+
+## 8. Validation and completion
 
 Before declaring UI work complete, verify as applicable:
 
@@ -105,7 +118,7 @@ Before declaring UI work complete, verify as applicable:
 - [ ] Layout supports actual tasks, respects supported window sizes, and handles overflow without hiding essential information.
 - [ ] Keyboard interaction, focus visibility, contrast, labeling, reduced motion, and relevant scaling/accessibility behaviors are checked.
 - [ ] Existing application logic, data, and familiar workflows are preserved unless authorized otherwise.
-- [ ] A visual polish pass has been performed against the **rendered** UI where available.
+- [ ] A whole-screen visual polish pass verified focal hierarchy, readable supporting text, purpose-driven card emphasis, space utilization, and rendered text clarity where available.
 - [ ] Approved extensions, unresolved deviations, and unverified items are clearly reported.
 
 Do not claim rendered visual compliance from source-code inspection alone. Do not invent a numerical compliance score. **Preserve what works. Improve what needs improvement. Redesign only when justified and authorized.**

@@ -1,4 +1,4 @@
-> **v1.2:** Treat this as an implementation aid. Canonical references determine exact styling. Default panel header is integrated; selected table rows use a teal background rather than a full outline; invalid inputs use neutral borders with error indicators; lime means primary/on, subdued green means successful outcome.
+> **v1.3:** Treat this as an implementation aid. Canonical references determine exact styling. Default panel header is integrated; selected table rows use a teal background rather than a full outline; invalid inputs use neutral borders with error indicators; lime means primary/on, subdued green means successful outcome.
 
 # Practical implementation guide (Rust/Tauri, Electron)
 
@@ -33,3 +33,8 @@ Do not set lime/green merely because a numeric value is greater than zero. The `
 ### Approved metric-color application
 
 For cards, style a deliberately featured favorable value with `var(--sv-value-positive)` as a sparse accent (for example, one headline per station card). Keep ordinary numeric table cells `var(--sv-text)` even when positive, and reserve `var(--sv-value-negative)` for genuine losses. Other meaningful favorable statistics may use subdued green sparingly where domain semantics support it. Do not infer green from a plus sign or from ranking alone. Win-rate thresholds are application-defined; choose amber for cautions and red only for genuine failures.
+
+
+## v1.3 content and visual-impact checks
+
+Use `--sv-text-readable-secondary` for descriptive text that should be comfortably read. Use `.sv-content-card` selectively for content-rich cards without inserting decorative nested sections. The `.sv-kpi--headline-featured` class is reserved for genuine headline KPI roles; equal peer cards may each use it for their equivalent featured metric. Dense tables continue to use subdued data-green only for designated favorable roles. At the end of implementation, inspect normal and constrained layouts, confirm fonts actually load, check browser zoom/OS scaling, and assess the whole screen for proper hierarchy rather than merely token compliance.

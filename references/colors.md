@@ -1,4 +1,4 @@
-# SimVizion color system — canonical reference (v1.2)
+# SimVizion color system — canonical reference (v1.3)
 
 > **Authority:** This file owns the color values and semantic color-use rules. `SKILL.md` summarizes the visual identity; `QUICK_REFERENCE.md` and `examples/tokens.css` must implement this file without defining competing standards. Component references own geometry and interaction mechanics. **Family resemblance, not uniformity:** keep the identity stable while designing layouts for their actual purpose.
 
@@ -8,14 +8,16 @@
 |---|---|---|
 | `--sv-window` | `#050C0E` | Main application background |
 | `--sv-panel` | `#0D1B1F` | Standard content panel |
+| `--sv-surface-content-raised` | `#101F23` | Unified intermediate surface for content-rich cards; optional purposeful internal grouping |
 | `--sv-elevated` | `#14272B` | Floating/raised content, toolbars where specified |
 | `--sv-recessed` | `#071215` | Input fields, recessed content, dropdown menus |
 | `--sv-border` | `#294147` | Normal 1px structural/control borders |
 | `--sv-text` | `#EDF4F5` | Primary text, ordinary numeric values |
+| `--sv-text-readable-secondary` | `#C5D4D6` | Frequently read supporting descriptions and explanatory content |
 | `--sv-text-secondary` | `#A6B8BC` | Labels, meaningful supporting prose, secondary values |
 | `--sv-text-muted` | `#91A6AB` | Metadata, placeholders, quiet helper text |
 
-Near-white and neutral gray-teal are the default text hierarchy. **Do not color every heading, label, or value cyan.** Do not use muted text for essential instructions. Separate regions primarily through surface contrast and spacing; borders reinforce purposeful boundaries. Standard buttons remain visibly bordered; not every nested panel needs a full outline.
+Near-white, readable-secondary (`#C5D4D6`), and neutral gray-teal are the default text hierarchy. Frequently read descriptions SHOULD use readable-secondary instead of metadata-muted colors. **Do not color every heading, label, or value cyan.** Do not use muted text for essential instructions. Separate regions primarily through surface contrast and spacing; borders reinforce purposeful boundaries. The intermediate surface MAY be used for whole content-rich cards. Internal raised strips are optional and must reflect meaningful groups, not decoration. Standard buttons remain visibly bordered; not every nested panel needs a full outline.
 
 ## 2. Functional accents and interactive states
 
@@ -33,7 +35,7 @@ Near-white and neutral gray-teal are the default text hierarchy. **Do not color 
 | `--sv-link` | `#86CDD0` | Links and selectively emphasized noninteractive technical context |
 | `--sv-link-hover` | `#B2E5E6` | Link hover/focus text |
 
-**Lime signifies actions and checked/on control state, not routine success results, navigation or numeric profitability.** Do not turn every positive number green. One dominant lime action per *functional context* is the normal hierarchy; independently functioning panels/dialogs may each have one.
+**Lime signifies actions and checked/on control state, plus approved semantically featured headline metrics; not routine success results, navigation, or ordinary numeric profitability.** Do not turn every positive number green. One dominant lime action per *functional context* is the normal hierarchy; independently functioning panels/dialogs may each have one.
 
 **Teal signifies navigation, selection and keyboard focus.** Infrequent noninteractive informational emphasis (e.g., active profile name or important identifier) MAY use restrained `--sv-link` teal when it materially aids orientation; it is not a default label, heading, or numeric-data color. Hyperlinks must remain recognizable as links through semantics and appropriate underline treatment, especially in prose.
 
@@ -63,11 +65,11 @@ For tinted status containers, existing guidance permits a lightly tinted semanti
 | `--sv-value-negative` | `#E8A0A0` | Genuine loss or unfavorable result, not merely a negative sign without context |
 | Cautionary statistic | `--sv-warning` `#F0B84B` | Context-defined caution, incomplete history or meaningful risk |
 
-**Sparse KPIs:** A single featured favorable result MAY use data green as the visual focal point without requiring an exceptional numerical threshold. Other cards and ordinary results stay neutral unless their significance warrants semantic color.
+**Sparse KPIs and equivalent peer cards:** A genuinely featured headline metric MAY use bright `--sv-lime` for visual impact; subdued `--sv-value-positive` remains available for meaningful favorable statistics. In a group of equally important entities, the same featured-metric role MAY be bright lime in every peer card without arbitrarily elevating one card. Ordinary positive values remain neutral; numerical magnitude alone never triggers headline status.
 
 **Dense tables:** A table MAY intentionally designate **one primary favorable metric column** (for example Profit/hr) for subdued green emphasis, typically with medium/semibold text. This is a role-based decision by the application—not a consequence of a plus sign, row ranking, or active sort column. If a value in the designated column is neutral or unfavorable, style it neutrally or with its relevant negative meaning, **not automatically green**. Other profit, median, margin, win-rate and ranked metrics remain near-white by default. A few separately defined exceptional favorable values MAY also use green; never introduce a second uniformly green column. Sorting and selection stay independent from data semantics.
 
-Reliability and win-rate color thresholds MUST be defined by the application's domain, if used; do not hardcode universal thresholds. Negative outcomes and caution must remain meaningful, labeled and not color-only. **Bright lime is never the numeric table-data accent.**
+Reliability and win-rate color thresholds MUST be defined by the application's domain, if used; do not hardcode universal thresholds. Negative outcomes and caution must remain meaningful, labeled and not color-only. **Bright lime is never the routine numeric table-data accent.**
 
 Although `--sv-status-success` and `--sv-value-positive` currently share the same hex value, they are **separate semantic roles** and should retain distinct names.
 
@@ -99,4 +101,4 @@ Destructive action style remains red regardless of whether that action is the ma
 - Check text and essential visual-state contrast against the **actual** surface. Target at least **4.5:1** for normal text and **3:1** for qualifying large text and essential nontext indicators; passive decorative panel borders need not meet a control-boundary target. Focus must be visible and distinguishable; enhance its default 1px teal border when needed. Verify case by case rather than recoloring the entire palette.
 - No semantic status or selected state is conveyed by color alone; use labels, icons, border geometry, text weight, or other redundant cues as appropriate.
 - Keep core tokens fixed. Application-specific specialized data visualizations MAY extend the palette with documented semantic tokens; normal UI may not quietly invent alternative primary, hover, input or selection colors.
-- `examples/tokens.css` and condensed guidance must be synchronized to this reference. The v1.2 implementation examples and quick reference must remain aligned with this canonical specification; flag any future drift as a defect rather than treating it as an approved alternative.
+- `examples/tokens.css` and condensed guidance must be synchronized to this reference. The v1.3 implementation examples and quick reference must remain aligned with this canonical specification; flag any future drift as a defect rather than treating it as an approved alternative.
