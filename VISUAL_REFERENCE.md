@@ -49,4 +49,22 @@ References establish visual intent, not automatic approval of every depicted sta
 
 ## DFTracker responsive cards — approved composition lessons (v1.5)
 
-The user-reviewed DFTracker wide and narrow card designs inform these principles: cohesive identity and analytical regions, subtle sectional tonal depth, a quiet separator, intentionally paired near-white item identity and lime featured metric, balanced framing of differently shaped product imagery, aligned peer-card statistics, and side-by-side-to-stacked responsive reflow. These are **transferable relationships, not a mandatory card template**. Preserve useful natural colors in item thumbnails. The original SimVizion IC references above remain the primary family-identity examples. The screenshot files are not bundled in this revision; do not claim to have inspected them solely from this description.
+The user-reviewed DFTracker wide and narrow card designs inform these principles: cohesive identity and analytical regions, subtle sectional tonal depth, a quiet separator, intentionally paired near-white item identity and lime featured metric, balanced framing of differently shaped product imagery, aligned peer-card statistics, and side-by-side-to-stacked responsive reflow. These are **transferable relationships, not a mandatory card template**. Preserve useful natural colors in item thumbnails. The original SimVizion IC references above remain the primary family-identity examples. The bundled screenshots below illustrate these relationships. Inspect the images directly when using them for visual comparison.
+
+## DFTracker visual examples — v1.5
+
+### Equivalent peer cards
+
+![Narrow peer cards](assets/dftracker-peer-cards-narrow.png)
+
+![Wide peer cards](assets/dftracker-peer-cards-wide.png)
+
+The same cards reflow from stacked identity/data regions to side-by-side sections. Compare alignment, subdued teal identity-region depth, natural artwork proportions, quiet dividers, and the near-white item title paired with a prominent lime metric. These are examples of relationships, not compulsory layouts.
+
+### Single-card layout
+
+![Narrow single card](assets/dftracker-single-card-narrow.png)
+
+![Wide single card](assets/dftracker-single-card-wide.png)
+
+The side-by-side and stacked examples illustrate how one cohesive outer card can change orientation without introducing nested panels.
