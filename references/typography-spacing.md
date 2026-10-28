@@ -1,4 +1,4 @@
-# Typography, spacing, geometry — canonical foundation (v1.4)
+# Typography, spacing, geometry — canonical foundation (v1.5)
 
 ## Typography
 
@@ -70,3 +70,8 @@ For standard forms, preferences and descriptive settings, **labels above fields*
 ## Text overflow
 
 Ordinary descriptions wrap naturally. Compact filenames/identifiers may truncate, with full-value access. Prefer middle truncation for paths where both the root and filename matter; preserve the complete value for copying/editing. Numeric values should not be silently truncated. Logs/code preserve exact formatting, with horizontal scrolling when needed. See tables and controls references for component-specific handling.
+
+
+## Dual hierarchy in content-rich cards (v1.5)
+
+A prominent item/entity title and a prominent featured metric may coexist. Differentiate their *roles* through placement, near-white title text, tabular metric numerals and selective semantically approved accent color—not by turning every label bold or enlarging all values. Keep supporting metrics clearly subordinate yet readable. Align corresponding text tiers across equivalent peer cards, including at constrained widths. Use the existing contextual typography scale; this rule adds no new global type sizes.

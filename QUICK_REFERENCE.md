@@ -91,3 +91,8 @@ This skill does **not** mandate storage (JSON/SQLite), recovery journals, notifi
 ## v1.4 family identity and composition
 
 Use `references/identity-composition.md` as the canonical guide. Open the actual reference images. Preserve family color roles, clear typography, control styling and coherent depth while choosing navigation, layout and density for the application. Branding gradients, artwork lighting and selective primary-action illumination are optional role-specific treatments, never replacements for focus or selection. Give content appropriate scale; keep tables compact. Review and correct whole-screen weaknesses separately from functional verification. See `examples/composition-review.md` for a written dashboard comparison, not a rendered template.
+
+
+## v1.5 expressive-composition reminder
+
+For substantial screen design, explicitly evaluate expressive treatments rather than defaulting to a bland flat grid. Consider selective teal atmospheric depth, unified sectional cards with quiet dividers, recognizable balanced artwork, contextual geometric motifs, aligned comparison peers and coordinated content-identity/featured-metric typography. Apply only where useful; preserve compact technical surfaces, canonical semantics and accessibility. See `references/identity-composition.md` for authoritative usage and quality checks.

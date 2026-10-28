@@ -33,3 +33,8 @@ Major screens SHOULD use available area proportionately: dense editors prioritiz
 ## Identity and shell scope
 
 The dimensions above are starting points for the described desktop patterns. A compact 40px toolbar with a small icon is appropriate for a working toolbar; it is not the universal SimVizion masthead. A product header may use a larger emblem and title, restrained atmospheric shading and useful context. Choose one coherent identity/navigation arrangement rather than stacking redundant bars. Keep primary work accessible below it. See `identity-composition.md` for canonical composition and branding rules.
+
+
+## Comparative content cards (v1.5)
+
+An approved content card may place a softly shaded identity/artwork region beside a stable metric region using one outer border and a quiet sectional divider. On narrow widths, stack regions and rotate the divider horizontally. Preserve equivalent peer alignment, labels, featured-value positions and action placement where comparison is the goal; permit content-driven exceptions. Keep peer image stages consistent without distorting differently shaped art. This is an optional composition, never the default for settings forms or dense technical panels. See `identity-composition.md` for authority.

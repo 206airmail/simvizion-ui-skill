@@ -45,3 +45,8 @@ Open each applicable image before using it for visual comparison. If access is u
 - **Reference 3 — SimVizion IC preferences:** a crisp foreground dialog separates from a dimmed, blurred application. Navigation, grouped settings and a clear primary completion action make the dialog readable. Transfer layering and control relationships; blur is optional and must have a usable fallback.
 
 References establish visual intent, not automatic approval of every depicted state, text size or accent. Canonical accessibility and interaction rules still apply. Role-specific atmospheric treatments are defined in `references/identity-composition.md`. For a dashboard composition without a viewport, see `examples/composition-review.md`.
+
+
+## DFTracker responsive cards — approved composition lessons (v1.5)
+
+The user-reviewed DFTracker wide and narrow card designs inform these principles: cohesive identity and analytical regions, subtle sectional tonal depth, a quiet separator, intentionally paired near-white item identity and lime featured metric, balanced framing of differently shaped product imagery, aligned peer-card statistics, and side-by-side-to-stacked responsive reflow. These are **transferable relationships, not a mandatory card template**. Preserve useful natural colors in item thumbnails. The original SimVizion IC references above remain the primary family-identity examples. The screenshot files are not bundled in this revision; do not claim to have inspected them solely from this description.

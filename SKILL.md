@@ -1,6 +1,6 @@
 ---
 name: simvizion-ui
-version: 1.4.0
+version: 1.5.0
 description: Apply the desktop-first SimVizion visual design language to new applications, existing applications, and web adaptations. Preserve a recognizable SimVizion family identity while choosing application-specific layouts, navigation, and workflows. Use for UI design, modernization, implementation, and visual review in Rust, Tauri, Electron, native desktop frameworks, and browser interfaces.
 ---
 
@@ -80,7 +80,7 @@ Before any SimVizion UI work, read this `SKILL.md` and the canonical foundations
 4. **Load relevant references and apply tokens.** Use canonical specifications and the project's existing component architecture where practical. Reuse documented variants; avoid arbitrary values or unnecessary new dependencies.
 5. **Implement all relevant states.** Include hover, pressed, focus, selection, checked, disabled, loading, validation, and keyboard behavior as appropriate. Distinguish disabled from read-only. Keep technical values accessible without breaking compact layouts.
 6. **Inspect the rendered UI when available.** Check representative normal, constrained, and expanded window sizes as appropriate, along with focus, error, and selected states. Verify the whole-screen composition, not only individual components.
-7. **Perform a required whole-screen polish pass when rendering is available.** Correct awkward alignment, spacing, hierarchy, excess accent usage, unwanted borders, clipping, and balance issues **within the approved layout and workflow boundaries**. Do not use polish as permission for wholesale redesign.
+7. **Perform a required whole-screen polish pass when rendering is available.** Evaluate appropriate expressive composition in addition to basic token compliance; Correct awkward alignment, spacing, hierarchy, excess accent usage, unwanted borders, clipping, and balance issues **within the approved layout and workflow boundaries**. Do not use polish as permission for wholesale redesign.
 8. **Report verification and deviations.** State what was checked, meaningful approved extensions, unresolved issues, and anything that could not be visually verified.
 
 ### Existing-application modernization boundary
@@ -97,7 +97,7 @@ Reference code SHOULD demonstrate required component states and SHOULD be mainta
 
 ## 7. Visual impact and whole-screen quality
 
-**Purposeful visual confidence is required; decorative intensity is not.** An interface can use every token correctly and still feel flat, cramped, washed out, or awkwardly dispersed. Agents MUST review the rendered screen when available and correct weak hierarchy, insufficient text contrast, ineffective grouping, and poor use of space.
+**Purposeful visual confidence is required; decorative intensity is not.** For substantial new screen designs and redesigns, agents MUST consider whether expressive composition (selective atmospheric depth, composed content cards, balanced artwork, or contextual motifs) materially improves hierarchy and character. Apply suitable treatments selectively; recording a reason not to use them is acceptable. Do not add decoration to meet a quota. An interface can use every token correctly and still feel flat, cramped, washed out, or awkwardly dispersed. Agents MUST review the rendered screen when available and correct weak hierarchy, insufficient text contrast, ineffective grouping, and poor use of space.
 
 - **Purpose-driven hierarchy:** Make each screen's purpose clear through layout, typography, contrast, and deliberate emphasis. Do not invent a featured winner among equally important categories. Equal peers SHOULD have equal visual importance; each MAY have a strong internal featured value.
 - **Featured metrics:** Bright lime is permitted for a small number of semantically featured headline metrics or for one equivalent headline value *per peer card*. Do not automatically turn ordinary favorable values lime or use lime for dense table numbers.

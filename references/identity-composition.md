@@ -1,4 +1,4 @@
-# Family identity and screen composition — canonical guidance (v1.4)
+# Family identity and screen composition — canonical guidance (v1.5)
 
 ## Stable family, purpose-built applications
 
@@ -31,6 +31,34 @@ Define effects through named contextual tokens. `examples/tokens.css` supplies o
 **Appropriate:** a subtle teal header wash around a clear product emblem, quiet data panels, framed item artwork and one restrained illuminated primary action.
 
 **Excessive:** glowing every card edge and icon, gradients behind table rows, saturated cyan body text, or pulsing lights competing with data. Also avoid interpreting restraint as a requirement for uniformly flat, anonymous screens.
+
+
+## Expressive composition patterns (v1.5)
+
+**Required consideration, optional application.** For substantial screen work, decide whether the content would benefit from selective atmosphere, visual/data sectional composition, meaningful artwork or domain-appropriate geometric accents. Use only what improves orientation, identification, comparison or hierarchy. Never add effects merely because an example contains them. Preserve the canonical semantic colors and independent focus/selection states.
+
+### Selective atmospheric and sectional depth
+
+- Soft, localized teal illumination MAY enrich branded headers, meaningful identity/illustration regions and occasional showcase cards. Keep data regions comparatively flat. Never place moving or high-contrast light behind values, controls or dense rows.
+- **Soft sectional depth** is an approved pattern for content-rich cards: one cohesive outer surface and border, an optional gently shaded identity region, a stable analytical region and a quiet 1px divider where the groups differ meaningfully. The orientation can change responsively. Neither a divider nor artwork is mandatory.
+- A structural external border and restrained internal separators are generally preferable to a nest of bordered cards. Independent interactive modules may require stronger boundaries.
+- Fine, nonessential geometric motifs MAY appear in identity regions. Derive the motif from the application's domain (e.g. technical traces or a subtle grid), rather than using one universal circuit pattern. Keep it behind content and within accessible contrast limits.
+
+### Artwork, framing and visual footprint
+
+- Supporting illustrations should be **recognizable but subordinate** to primary information and actions; avoid nearly invisible filler and dominant decorative artwork. Full-color photos, item images, maps and technical previews retain meaningful original colors.
+- Equivalent image cards SHOULD use a consistent **image stage** (space, alignment and safe inset). Preserve aspect ratio; `object-fit: contain` is a sound default for isolated objects. Allow modest per-asset optical adjustments for unusually wide, tall or transparent artwork, without distortion, uncontrolled cropping or low-resolution over-enlargement.
+- Peer artwork should feel visually balanced in perceived footprint, not be forced to identical rendered dimensions. Keep captions and recommended-item positions predictable when comparing peers.
+
+### Comparative cards and coordinated dual hierarchy
+
+- Peer cards representing equivalent categories SHOULD align corresponding regions, featured metrics, supporting values and actions, with equivalent emphasis. Do not promote one peer merely because its number is bigger. Equal heights and rigid proportions are not universal requirements.
+- **Coordinated dual hierarchy:** a prominent content identity (what the item/entity is) and a featured analytical metric (why it matters) MAY coexist. Use near-white typography for the identity and an appropriately styled/tabular featured value; keep supporting statistics aligned, legible and quieter. Lime is reserved for approved featured metric roles, not ordinary positive numbers.
+- At narrow widths, side-by-side identity/data regions MAY stack and a vertical separator MAY become horizontal. Preserve reading order and usable metric width; don't just shrink everything. Use purpose-driven proportions, allowing artwork or data to dominate only when the task justifies it.
+
+### Expressiveness quality check
+
+During the rendered whole-screen review, explicitly assess: (1) first focal point and next reading step, (2) whether identity and data emphasis coexist without competition, (3) peer alignment across representative content variations, (4) image-stage balance, (5) sectional depth and border fragmentation, and (6) whether lighting or geometric details meaningfully improve the result. Check a normal and constrained width. If the best design remains flat, preserve it; flat is not a failure. Report unverified visuals rather than claiming compliance from code alone.
 
 ## Visual review and evidence
 
