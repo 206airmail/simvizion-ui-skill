@@ -58,3 +58,8 @@ These are **specialized recommendations**, harmonized with the already-approved 
 ## Dense financial tables: approved featured-column option B
 
 Use `--sv-value-positive` on **one intentionally prioritized favorable measure column** where it improves scanability (for example Profit/hr), not on every positive numeric cell and not simply because it is sorted. Keep other routine positive metrics near-white. Add small, exceptional context-defined green highlights sparingly. Do not turn entire columns green for common win rates, and keep bright lime out of dense numeric table columns. This rule refines earlier strict neutral-only dense-table wording; see `references/tables.md`.
+
+
+## Coordinated identity and metric hierarchy (v1.5)
+
+In an expressive content-rich card, an entity/item title and a featured numerical result MAY both be prominent because they answer different questions. Give identity strong near-white text; reserve lime for metrics explicitly qualified as featured under `colors.md`. Present supporting values in aligned, calmer groups and keep tertiary context readable. Equal peer cards use equivalent metric roles; the largest numerical result does not automatically become the featured category. See `identity-composition.md` for layouts and responsive sectional reflow.
